@@ -15,7 +15,7 @@
 - @solana/web3.js是JSON RPC API上的抽象层。它可以通过npm安装，并允许您将Solana方法作为JavaScript函数调用。例如，您可以使用它查询任何账户的SOL余额：
 
 ```js
-  async function getBalanceUsingWeb3(address: PublicKey): Promise<number> {
+async function getBalanceUsingWeb3(address: PublicKey): Promise<number> {
     const connection = new Connection(clusterApiUrl('devnet'));
     return connection.getBalance(address);
 }
